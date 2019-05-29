@@ -9,7 +9,7 @@ pipeline {
     stage ('Build and Package') {
 
             steps {
-                withMaven(maven : 'maven-3') {
+                withMaven(maven : 'maven') {
                     sh 'mvn clean package'
                 }
             }
